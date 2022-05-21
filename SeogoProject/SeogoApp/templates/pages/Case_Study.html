@@ -1,0 +1,193 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- bradcam_area  -->
+<div class="bradcam_area">
+    <div class="bradcam_shap">
+        <img src="{% static 'seogo/img/ilstrator/bradcam_ils.png' %}" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Case Study</h3>
+                    <nav class="brad_cam_lists">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'base' %}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Case Study</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bradcam_area  -->
+
+<!-- case_study_area  -->
+<div class="case_study_area white_case_study">
+    <div class="patrn_1 d-none d-lg-block">
+        <img src="{% static 'seogo/img/pattern/patrn_1.png' %}" alt="">
+    </div>
+    <div class="patrn_2 d-none d-lg-block">
+        <img src="{% static  'seogo/img/pattern/patrn.png'  %}" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single_study text-center white_single_study">
+                    <div class="thumb">
+                        <a href="{% url 'case_details' %}">
+                            <img src="{% static  'seogo/img/case_study/1.png' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="subheading white_subheading">
+                        <h4><a href="#">Product Design</a></h4>
+                        <p>UI/UX, Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_study text-center white_single_study">
+                    <div class="thumb">
+                        <a href="{% url 'case_details' %}">
+                            <img src="{% static  'seogo/img/case_study/2.png' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="subheading white_subheading">
+                        <h4><a href="{% url 'case_details' %}">Custom Website</a></h4>
+                        <p>UI/UX, Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_study text-center white_single_study">
+                    <div class="thumb">
+                        <a href="{% url 'case_details' %}">
+                            <img src="{% static 'seogo/img/case_study/3.png' %} " alt="">
+                        </a>
+                    </div>
+                    <div class="subheading white_subheading">
+                        <h4><a href="{% url 'case_details' %}">Digital Marketing</a></h4>
+                        <p>UI/UX, Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_study text-center white_single_study">
+                    <div class="thumb">
+                        <a href="{% url 'case_details' %}">
+                            <img src="{% static  'seogo/img/case_study/4.png' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="subheading white_subheading">
+                        <h4><a href="{% url 'case_details' %}">Product Design</a></h4>
+                        <p>UI/UX, Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_study text-center white_single_study">
+                    <div class="thumb">
+                        <a href="{% url 'case_details' %}">
+                            <img src="{% static  'seogo/img/case_study/5.png' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="subheading white_subheading">
+                        <h4><a href="{% url 'case_details' %}">Custom Website</a></h4>
+                        <p>UI/UX, Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_study text-center white_single_study">
+                    <div class="thumb">
+                        <a href="{% url 'case_details' %}">
+                            <img src="{% static  'seogo/img/case_study/6.png' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="subheading white_subheading">
+                        <h4><a href="{% url 'case_details' %}">Digital Marketing</a></h4>
+                        <p>UI/UX, Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="load_more text-center">
+                    <a class="load_more_btn" href="#">Load More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ case_study_area  -->
+
+<!-- testimonial_area  -->
+<div class="testimonial_area ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="testmonial_active owl-carousel">
+                    <div class="single_carousel">
+                        <div class="single_testmonial text-center">
+                            <div class="quote">
+                                <img src="{% static  'seogo/img/testmonial/quote.svg' %}" alt="">
+                            </div>
+                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
+                                sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque. <br>
+                                Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                            <div class="testmonial_author">
+                                <div class="thumb">
+                                    <img src="{% static  'seogo/img/testmonial/thumb.png' %}" alt="">
+                                </div>
+                                <h3>Robert Thomson</h3>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_carousel">
+                        <div class="single_testmonial text-center">
+                            <div class="quote">
+                                <img src="{% static  'seogo/img/testmonial/quote.svg' %}" alt="">
+                            </div>
+                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
+                                sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque. <br>
+                                Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                            <div class="testmonial_author">
+                                <div class="thumb">
+                                    <img src="{% static 'seogo/img/testmonial/thumb.png' %}" alt="">
+                                </div>
+                                <h3>Robert Thomson</h3>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_carousel">
+                        <div class="single_testmonial text-center">
+                            <div class="quote">
+                                <img src="{% static  'seogo/img/testmonial/quote.svg' %}" alt="">
+                            </div>
+                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
+                                sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque. <br>
+                                Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                            <div class="testmonial_author">
+                                <div class="thumb">
+                                    <img src="{% static  'seogo/img/testmonial/thumb.png' %}" alt="">
+                                </div>
+                                <h3>Robert Thomson</h3>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /testimonial_area  -->
+{% endblock content %}
